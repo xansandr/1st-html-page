@@ -26,70 +26,71 @@
     <title>Organick</title>
   </head>
   <body>
-    <header class="header__container">
-      <div class="burger-transition">
-        <div class="logo-container">
-          <div class="logo-container__img">
-            <img src="./images/logo.jpg" alt="img-logo" />
-          </div>
-          <h2 class="logo-container__name font_blue">Organick</h2>
+    <header class="header-container">
+      <div class="logo-container">
+        <div class="logo-container__img">
+          <img src="./images/logo.jpg" alt="img-logo" />
         </div>
-
-        <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
-        <label class="burger" for="burger-checkbox"></label>
-        <nav class="navigation">
-          <ul class="nav">
-            <li class="nav__item font_blue">Home</li>
-            <li class="nav__item font_blue">About Us</li>
-            <li class="nav__item font_blue">Shop</li>
-            <li class="nav__item font_blue">Pages</li>
-            <li class="nav__item font_blue">Contact Us</li>
-          </ul>
-        </nav>
+        <h2 class="logo-container__name color_blue">Organick</h2>
       </div>
-      <div class="cart-container">
-        <div class="cart-container__img">
-          <img src="./images/cart.png" alt="img-cart" />
+
+      <input type="checkbox" id="burger-checkbox" class="burger-checkbox" />
+      <label class="burger" for="burger-checkbox"></label>
+      <nav class="navigation">
+        <ul class="nav">
+          <li class="nav__item color_blue">Home</li>
+          <li class="nav__item color_blue">About Us</li>
+          <li class="nav__item color_blue">Shop</li>
+          <li class="nav__item color_blue">Pages</li>
+          <li class="nav__item color_blue">Contact Us</li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <div class="cart__img">
+          <img src="./images/cart.png" alt="vector-cart" />
         </div>
-        <span class="cart-container__amount font_blue">Cart 0</span>
+        <span class="cart__amount color_blue">Cart 0</span>
       </div>
     </header>
 
-    <div class="container">
-      <section class="intro">
-        <h3 class="intro__first cursive-font">Made with nature</h3>
-        <h2 class="intro__second">
-          Welcome to the world of mature and organic.
-        </h2>
-        <div class="button-now">
+    <section class="intro">
+      <div class="container">
+        <h2 class="font_cursive">Made with nature</h2>
+        <p class="intro__header">Welcome to the world of mature and organic.</p>
+        <div class="button">
           <a href="#">
-            <span class="button-now__text">Explore Now</span>
-            <img src="./images/button-arrow.png" alt="" />
+            <span class="button__text color_blue">Explore Now</span>
+            <div class="button__img">
+              <img src="./images/button-arrow.png" alt="vector-arrow" />
+            </div>
           </a>
         </div>
-      </section>
-    </div>
-    <div class="container">
-      <section class="discount-cards">
-        <div class="cards__item item-left">
-          <h3 class="cursive-font color_white">Natural!!</h3>
-          <h2 class="font_blue color_white">Get Garden Fresh Fruits</h2>
+      </div>
+    </section>
+    <section class="discount-cards">
+      <div class="container">
+        <div class="discount-cards__item item-pink">
+          <h2 class="font_cursive color_white">Natural!!</h2>
+          <p class="color_white">Get Garden Fresh Fruits</p>
         </div>
-        <div class="cards__item item-right">
-          <h3 class="cursive-font">Offer!!</h3>
-          <h2 class="font_blue">Get 10% off on Vegetables</h2>
+        <div class="discount-cards__item item-white">
+          <h2 class="font_cursive">Offer!!</h2>
+          <p class="color_blue">Get 10% off on Vegetables</p>
         </div>
-      </section>
-    </div>
-    <div class="container-grey">
-      <section class="about-us">
-        <img src="./images/about-us-image.png" alt="oranges" />
-        <div class="about-us-content font_blue">
-          <h3 class="cursive-font">About Us</h3>
-          <h2 class="font_blue">
-            We Believe In Organic Foods For Strong Health
-          </h2>
-          <p class="content-description">
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__img">
+          <img src="./images/about-us-image.png" alt="oranges" />
+        </div>
+        <div class="about-us-content color_blue">
+          <div class="section-header">
+            <h2 class="font_cursive">About Us</h2>
+            <h3>We Believe In Organic Foods For Strong Health</h3>
+          </div>
+
+          <p class="font_description">
             Welcome to the world of natural and organic. Here you can discover
             the bounty of nature. We have grown on the principles of health, and
             care. We aim to give our customers a healthy chemical-free meal for
@@ -97,13 +98,13 @@
           </p>
           <div class="about-us-advantage">
             <div class="about-us-advantage__img">
-              <img src="/images/about-us-organic.png" alt="" />
+              <img src="/images/about-us-organic.png" alt="about-us-organic" />
             </div>
             <div>
               <h4 class="about-us-advantage__header font-nav">
                 Organic Foods Only
               </h4>
-              <p class="about-us-advantage__description content-description">
+              <p class="about-us-advantage__description font_description">
                 The Product that you ordered will be verified that we have or
                 not if have we will start to move on with the next step.
               </p>
@@ -111,248 +112,257 @@
           </div>
           <div class="about-us-advantage">
             <div class="about-us-advantage__img">
-              <img src="/images/about-us-quality.png" alt="" />
+              <img src="/images/about-us-quality.png" alt="about-us-quality" />
             </div>
             <div>
               <h4 class="about-us-advantage__header font-nav">
                 Quality Standards
               </h4>
-              <p class="about-us-advantage__description content-description">
+              <p class="about-us-advantage__description font_description">
                 Once your product is packed it will be delivered to your nearby
                 locality you can directly visit the to buy the product.
               </p>
             </div>
           </div>
-          <div class="button-now button-now_shop">
+          <div class="button">
             <a href="#">
-              <span class="button-now__text color_white">Shop Now</span>
-              <img src="./images/button-arrow.png" alt="" />
+              <span class="button__text color_white">Shop Now</span>
+              <div class="button__img">
+                <img src="./images/button-arrow.png" alt="vector-arrow" />
+              </div>
             </a>
           </div>
         </div>
-      </section>
-    </div>
-    <div class="container">
-      <section>
+      </div>
+    </section>
+    <section class="product">
+      <div class="container">
         <div class="section-header">
-          <h3 class="cursive-font">Organic</h3>
-          <h2 class="font_blue">Our Products</h2>
+          <h3 class="font_cursive">Organic</h3>
+          <h2 class="color_blue">Our Products</h2>
         </div>
-        <div class="products">
+        <div class="product-list">
           <div class="product-item">
-            <div class="product__type color_white font_blue">Vegetable</div>
+            <div class="product__type color_white">Vegetable</div>
             <div class="product__img">
-              <img src="./images/broccoli.png" alt="" />
+              <img src="./images/broccoli.png" alt="broccoli" />
             </div>
-            <div class="product__name font_blue">Calabrese Broccoli</div>
+            <div class="product__name color_blue">Calabrese Broccoli</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 25.00 USD</div>
-                <div class="price font_blue">$ 21.00 USD</div>
+                <div class="price color_blue">$ 25.00 USD</div>
+                <div class="price color_blue">$ 21.00 USD</div>
               </div>
               <div class="product__rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product__type color_white font_blue">Mill</div>
+            <div class="product__type color_white">Mill</div>
             <div class="product__img">
-              <img src="./images/pistachio.png" alt="" />
+              <img src="./images/pistachio.png" alt="Pistachio" />
             </div>
-            <div class="product__name font_blue">Dried Pistachio</div>
+            <div class="product__name color_blue">Dried Pistachio</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 61.00 USD</div>
-                <div class="price font_blue">$ 48.00 USD</div>
+                <div class="price color_blue">$ 61.00 USD</div>
+                <div class="price color_blue">$ 48.00 USD</div>
               </div>
               <div class="product__rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product__type color_white font_blue">Vegetable</div>
+            <div class="product__type color_white">Vegetable</div>
             <div class="product__img">
-              <img src="./images/corn.png" alt="" />
+              <img src="./images/corn.png" alt="corn" />
             </div>
-            <div class="product__name font_blue">Fresh Corn</div>
+            <div class="product__name color_blue">Fresh Corn</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 21.23 USD</div>
-                <div class="price font_blue">$ 18.00 USD</div>
+                <div class="price color_blue">$ 21.23 USD</div>
+                <div class="price color_blue">$ 18.00 USD</div>
               </div>
               <div class="product__rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product__type color_white font_blue">Vegetable</div>
+            <div class="product__type color_white">Vegetable</div>
             <div class="product__img">
-              <img src="./images/tomato.png" alt="" />
+              <img src="./images/tomato.png" alt="tomato" />
             </div>
-            <div class="product__name font_blue">Vegan Red Tomato</div>
+            <div class="product__name color_blue">Vegan Red Tomato</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 14.00 USD</div>
-                <div class="price font_blue">$ 9.37 USD</div>
+                <div class="price color_blue">$ 14.00 USD</div>
+                <div class="price color_blue">$ 9.37 USD</div>
               </div>
               <div class="rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product__type color_white font_blue">Fruit</div>
+            <div class="product__type color_white">Fruit</div>
             <div class="product__img">
-              <img src="./images/almonds.png" alt="" />
+              <img src="./images/almonds.png" alt="almonds" />
             </div>
-            <div class="product__name font_blue">Organic Almonds</div>
+            <div class="product__name color_blue">Organic Almonds</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 21.00 USD</div>
-                <div class="price font_blue">$ 18.00 USD</div>
+                <div class="price color_blue">$ 21.00 USD</div>
+                <div class="price color_blue">$ 18.00 USD</div>
               </div>
               <div class="product__rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
 
           <div class="product-item">
-            <div class="product__type color_white font_blue">Millet</div>
+            <div class="product__type color_white">Millet</div>
             <div class="product__img">
-              <img src="./images/hazelnut.png" alt="" />
+              <img src="./images/hazelnut.png" alt="hazelnut" />
             </div>
-            <div class="product__name font_blue">Brown Hazelnut</div>
+            <div class="product__name color_blue">Brown Hazelnut</div>
             <div class="product__wrap"></div>
             <div class="product__below-wrap">
               <div class="product__price">
-                <div class="price font_blue">$ 43.00 USD</div>
-                <div class="price font_blue">$ 34.00 USD</div>
+                <div class="price color_blue">$ 43.00 USD</div>
+                <div class="price color_blue">$ 34.00 USD</div>
               </div>
               <div class="product__rating">
-                <img src="./images/stars.png" alt="" />
+                <img src="./images/stars.png" alt="star-rating" />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-
-    <section class="customer-review">
-      <div class="section-header">
-        <h3 class="cursive-font">Testimonial</h3>
-        <h2 class="font_blue">What Our Customer Saying?</h2>
-      </div>
-      <div class="customer__avatar">
-        <img src="/images/sara.png" alt="" />
-      </div>
-      <div class="customer__rating">
-        <img src="/images/stars.png" alt="" />
-      </div>
-      <p class="customer__text font_blue">
-        The quality of organic produce is extremely high, the service is second
-        to none and the taste of the food takes me back to my childhood when we
-        were growing our own.
-      </p>
-      <h2 class="customer__name font_blue">Sara Taylor</h2>
-      <span class="content-description customer__description">Consumer</span>
-      <span class="review__wrapper"></span>
-      <div class="achivements">
-        <div class="achivement__item">
-          <span>100%</span>
-          <span>Organic</span>
-        </div>
-        <div class="achivement__item">
-          <span>285</span>
-          <span>Active Product</span>
-        </div>
-        <div class="achivement__item">
-          <span>385+</span>
-          <span>Organic Orchads</span>
-        </div>
-        <div class="achivement__item">
-          <span>25+</span>
-          <span>Years of Farming</span>
         </div>
       </div>
     </section>
-    <section class="offer">
+
+    <section class="customer-review">
       <div class="container">
         <div class="section-header">
-          <h3 class="cursive-font">Offer Products</h3>
-          <h2 class="font_blue color_white">We Offer Organic for You</h2>
+          <h2 class="font_cursive">Testimonial</h2>
+          <h2 class="color_blue">What Our Customer Saying?</h2>
         </div>
-        <div class="button-now">
-          <a href="#">
-            <span class="button-now__text">View All Products</span>
-            <img src="./images/button-arrow.png" alt="" />
-          </a>
+        <div class="customer__avatar">
+          <img src="/images/sara.png" alt="customer-sara-avatar" />
+        </div>
+        <div class="customer__rating">
+          <img src="/images/stars.png" alt="star-rating" />
+        </div>
+        <p class="customer__text color_blue">
+          The quality of organic produce is extremely high, the service is
+          second to none and the taste of the food takes me back to my childhood
+          when we were growing our own.
+        </p>
+        <h3 class="customer__name color_blue">Sara Taylor</h3>
+        <span class="customer__description font_description">Consumer</span>
+        <span class="customer-review__wrapper"></span>
+        <div class="achivements">
+          <div class="achivement__item">
+            <span>100%</span>
+            <span>Organic</span>
+          </div>
+          <div class="achivement__item">
+            <span>285</span>
+            <span>Active Product</span>
+          </div>
+          <div class="achivement__item">
+            <span>385+</span>
+            <span>Organic Orchads</span>
+          </div>
+          <div class="achivement__item">
+            <span>25+</span>
+            <span>Years of Farming</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="offer__product-item">
-        <div class="product-item">
-          <div class="product__type color_white font_blue">Vegetable</div>
-          <div class="product__img">
-            <img src="./images/corn.png" alt="" />
+    <section class="offer">
+      <div class="container">
+        <div class="container-header">
+          <div class="section-header">
+            <h2 class="font_cursive">Offer Products</h2>
+            <h3 class="color_white">We Offer Organic for You</h3>
           </div>
-          <div class="product__name font_blue">Fresh Corn</div>
-          <div class="product__wrap"></div>
-          <div class="product__below-wrap">
-            <div class="product__price">
-              <div class="price font_blue">$ 21.23 USD</div>
-              <div class="price font_blue">$ 18.00 USD</div>
-            </div>
-            <div class="product__rating">
-              <img src="./images/stars.png" alt="" />
-            </div>
+          <div class="button">
+            <a href="#">
+              <span class="button__text">Explore Now</span>
+              <div class="button__img">
+                <img src="./images/button-arrow.png" alt="vector-arrow" />
+              </div>
+            </a>
           </div>
         </div>
 
-        <div class="product-item">
-          <div class="product__type color_white font_blue">Vegetable</div>
-          <div class="product__img">
-            <img src="./images/tomato.png" alt="" />
-          </div>
-          <div class="product__name font_blue">Vegan Red Tomato</div>
-          <div class="product__wrap"></div>
-          <div class="product__below-wrap">
-            <div class="product__price">
-              <div class="price font_blue">$ 14.00 USD</div>
-              <div class="price font_blue">$ 9.37 USD</div>
+        <div class="offer__product-item">
+          <div class="product-item">
+            <div class="product__type color_white">Vegetable</div>
+            <div class="product__img">
+              <img src="./images/corn.png" alt="corn" />
             </div>
-            <div class="rating">
-              <img src="./images/stars.png" alt="" />
+            <div class="product__name color_blue">Fresh Corn</div>
+            <div class="product__wrap"></div>
+            <div class="product__below-wrap">
+              <div class="product__price">
+                <div class="price color_blue">$ 21.23 USD</div>
+                <div class="price color_blue">$ 18.00 USD</div>
+              </div>
+              <div class="product__rating">
+                <img src="./images/stars.png" alt="star-rating" />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="product-item">
-          <div class="product__type color_white font_blue">Fruit</div>
-          <div class="product__img">
-            <img src="./images/almonds.png" alt="" />
-          </div>
-          <div class="product__name font_blue">Organic Almonds</div>
-          <div class="product__wrap"></div>
-          <div class="product__below-wrap">
-            <div class="product__price">
-              <div class="price font_blue">$ 21.00 USD</div>
-              <div class="price font_blue">$ 18.00 USD</div>
+          <div class="product-item">
+            <div class="product__type color_white">Vegetable</div>
+            <div class="product__img">
+              <img src="./images/tomato.png" alt="tomato" />
             </div>
-            <div class="product__rating">
-              <img src="./images/stars.png" alt="" />
+            <div class="product__name color_blue">Vegan Red Tomato</div>
+            <div class="product__wrap"></div>
+            <div class="product__below-wrap">
+              <div class="product__price">
+                <div class="price color_blue">$ 14.00 USD</div>
+                <div class="price color_blue">$ 9.37 USD</div>
+              </div>
+              <div class="rating">
+                <img src="./images/stars.png" alt="star-rating" />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <div class="product__type color_white">Fruit</div>
+            <div class="product__img">
+              <img src="./images/almonds.png" alt="almonds" />
+            </div>
+            <div class="product__name color_blue">Organic Almonds</div>
+            <div class="product__wrap"></div>
+            <div class="product__below-wrap">
+              <div class="product__price">
+                <div class="price color_blue">$ 21.00 USD</div>
+                <div class="price color_blue">$ 18.00 USD</div>
+              </div>
+              <div class="product__rating">
+                <img src="./images/stars.png" alt="star-rating" />
+              </div>
             </div>
           </div>
         </div>
@@ -360,58 +370,63 @@
     </section>
     <section class="eco-friendly">
       <div class="eco__content">
-        <h3 class="cursive-font">Offer products</h3>
-        <h2 class="font_blue">From our farm to your home.</h2>
-        <h4 class="content__header font_blue">Choose Your Products</h4>
-        <p class="content__description content-description">
+        <h2 class="font_cursive">Offer products</h2>
+        <h3 class="color_blue">From our farm to your home.</h3>
+        <h4 class="content__header color_blue">Choose Your Products</h4>
+        <p class="content__description font_description">
           In our listing, we have several collections of organic products. This
           is the place where you need to choose the product you want.
         </p>
-        <h4 class="content__header font_blue">Farmers will produce it</h4>
-        <p class="content__description content-description">
+        <h4 class="content__header color_blue">Farmers will produce it</h4>
+        <p class="content__description font_description">
           The Product that you ordered will be verified that we have or not if
           have we will start to move on with the next step.
         </p>
-        <h4 class="content__header font_blue">We Can Delivery too</h4>
-        <p class="content__description content-description">
+        <h4 class="content__header color_blue">We Can Delivery too</h4>
+        <p class="content__description font_description">
           If you are not comfortable going to the nearby market place we also
           will deliver your product to your doorstep.
         </p>
       </div>
     </section>
-    <div class="food-container">
+    <section class="food-container">
       <section class="food-types">
         <div class="food__item">
-          <h4 class="food__header font_blue">Fruit Juice</h4>
+          <h4 class="food__header color_blue">Fruit Juice</h4>
         </div>
         <div class="food__item">
-          <h4 class="food__header font_blue">Organic Food</h4>
+          <h4 class="food__header color_blue">Organic Food</h4>
         </div>
         <div class="food__item">
-          <h4 class="food__header font_blue">Nuts Cookies</h4>
+          <h4 class="food__header color_blue">Nuts Cookies</h4>
         </div>
       </section>
-    </div>
-    <div class="subscribe">
-      <div class="sub-container__header">
-        <h2>Subscribe Our Newsletter</h2>
-      </div>
-      <div class="sub-input-container">
-        <input
-          class="sub-input"
-          type="mail"
-          placeholder="Enter your email address"
-        />
-        <div class="button-now">
-          <a href="#">
-            <span class="button-now__text">Subscribe</span>
-            <img src="./images/button-arrow.png" alt="" />
-          </a>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe-container">
+        <div class="subscribe__header">
+          <h2>Subscribe Our Newsletter</h2>
+        </div>
+        <div class="subscribe-input-container">
+          <input
+            class="subscribe-input"
+            type="email"
+            placeholder="Enter your email address"
+          />
+          <div class="button">
+            <a href="#">
+              <span class="button__text">Subscribe</span>
+              <div class="button__img">
+                <img src="./images/button-arrow.png" alt="vector-arrow" />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <footer class="footer">
-      <div class="footer-column column-left font_blue">
+      <div class="footer-column column-left color_blue">
         <h3>Contact Us</h3>
         <div>
           <h4>Email</h4>
@@ -427,26 +442,26 @@
         </div>
       </div>
 
-      <div class="footer-column column-middle font_blue">
+      <div class="footer-column column-middle color_blue">
         <div class="logo-container">
           <div class="logo-container__img">
             <img src="./images/logo.jpg" alt="img-logo" />
           </div>
-          <h2 class="logo-container__name font_blue">Organick</h2>
+          <h2 class="logo-container__name color_blue">Organick</h2>
         </div>
-        <p class="footer-content content-description">
+        <p class="footer-content font_description">
           We are a popular and farming company aspiring to be a leader in the
           Organic food industry.
         </p>
         <div class="socials">
-          <div><img src="/images/soc1.png" alt="" /></div>
-          <div><img src="/images/soc2.png" alt="" /></div>
-          <div><img src="/images/soc3.png" alt="" /></div>
-          <div><img src="/images/soc4.png" alt="" /></div>
+          <div><img src="/images/soc1.png" alt="facebook" /></div>
+          <div><img src="/images/soc2.png" alt="twitter" /></div>
+          <div><img src="/images/soc3.png" alt="instagram" /></div>
+          <div><img src="/images/soc4.png" alt="pinterest" /></div>
         </div>
       </div>
 
-      <div class="footer-column column-right font_blue">
+      <div class="footer-column column-right color_blue">
         <h3>Utility Page</h3>
         <a href="#">Style Guide</a>
         <a href="#">Protected</a>
@@ -455,6 +470,6 @@
         <a href="#">Licenses</a>
       </div>
     </footer>
-    <div class="map"><img src="/images/map.png" alt="" /></div>
+    <div class="map"><img src="/images/map.png" alt="map" /></div>
   </body>
 </html>

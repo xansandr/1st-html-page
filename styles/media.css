@@ -21,38 +21,7 @@
   }
 }
 
-@media screen and (max-width: 1440px) {
-  .nav {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  .eco-friendly {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-right: 0px;
-    max-height: 704px;
-    max-width: 100%;
-    background: url("/images/bg-field.png") no-repeat;
-    background-size: 720px 704px;
-    background-position: left 0px;
-  }
-
-  .discount-cards {
-    padding: 0 30px;
-  }
-  .subscribe__header {
-    text-align: left;
-  }
-}
-
 @media screen and (max-width: 1450px) {
-  .nav {
-    flex-direction: column;
-  }
   .navigation {
     top: 0;
     right: 0;
@@ -64,7 +33,7 @@
     margin: 0;
     background: rgb(242, 236, 218);
     list-style-type: none;
-    transform: translateX(-100%);
+    transform: translateX(-500%);
     transition: 0.3s;
     width: 100vw;
     height: 100vh;
@@ -128,6 +97,34 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .nav {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .eco-friendly {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 0px;
+    max-height: 704px;
+    max-width: 100%;
+    background: url("/images/bg-field.png") no-repeat;
+    background-size: 720px 704px;
+    background-position: left 0px;
+  }
+
+  .discount-cards {
+    padding: 0 30px;
+  }
+  .subscribe__header {
+    text-align: left;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .discount-cards .container {
     flex-direction: column;
@@ -176,8 +173,9 @@
     flex-direction: column;
   }
 
-  .about-us .section-header > h2 {
+  .about-us .section-header .font_cursive {
     text-align: center;
+    width: 100%;
   }
 
   .about-us .section-header {
@@ -197,14 +195,15 @@
 }
 
 @media screen and (max-width: 800px) {
+  .font_cursive {
+    text-align: center;
+    width: 100%;
+  }
   .container {
     padding: 100px 20px;
   }
   .intro {
     height: 50%;
-  }
-  .intro h2 {
-    text-align: center;
   }
   .intro__header {
     font-size: 30px;
@@ -242,6 +241,7 @@
     padding-bottom: 5px;
     line-height: 25px;
     font-size: 30px;
+    text-align: left;
   }
   .discount-cards__item p {
     line-height: 25px;
@@ -249,42 +249,33 @@
     max-width: 100%;
     font-size: 25px;
   }
-
+  .customer-review .section-header {
+    width: 90%;
+    text-align: center;
+  }
   .about-us > img {
     width: 100%;
   }
-  .about-us-content > h2 {
-    font-size: 25px;
-    line-height: 30px;
+
+  .about-us-content {
+    width: 100%;
   }
+
   .about-us-advantage {
     margin-top: 0px;
   }
   .button_shop a {
     gap: 15px;
   }
-
   .offer > .container > .container-header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .offer > .container > .section-header * {
     align-items: center;
     justify-content: center;
   }
-  /* .section-header {
-    align-items: center;
-    margin-top: 15px;
-  } */
-  /* .product-item {
-    max-width: 300px;
-  } */
-  /* .section-header > h2 {
-    text-align: center;
-    padding: 0 auto;
-  } */
   .offer > .container {
     display: flex;
     flex-direction: column;
@@ -299,14 +290,6 @@
   .offer > .container {
     max-width: 100%;
   }
-  /* .section-header > h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  .section-header > h3 {
-    margin: 0 auto;
-    padding: 0;
-  } */
   .eco__content {
     padding: 10px;
     margin: 0px;
@@ -322,6 +305,26 @@
     width: 100%;
     text-align: center;
   }
+  .eco__content h3 {
+    padding-top: 5px;
+    font-size: 25px;
+    line-height: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .eco__content h4 {
+    font-size: 25px;
+    line-height: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .eco__content p {
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+    text-align: center;
+  }
+
   .product__wrap {
     width: 90%;
   }
@@ -358,9 +361,16 @@
   .subscribe-input-container {
     flex-direction: column;
   }
+  .subscribe__header h2{
+    font-size: 30px;
+  }
   .achivements {
     padding: 0 10px 40px 10px;
   }
+  .container-header {
+    text-align: center;
+  }
+  
 }
 
 @media screen and (max-width: 640px) {
@@ -378,9 +388,12 @@
     gap: 20px;
     width: 100%;
   }
+}
 
-  .subscribe__header h2 {
-    font-size: 40px;
+@media screen and (max-width: 600px) {
+  .achivement__item {
+    height: 170px;
+    width: 170px;
   }
 }
 

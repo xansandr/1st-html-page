@@ -834,4 +834,5 @@ span {
 .map img {
   margin-top: 85px;
   max-width: 100%;
+  vertical-align: middle;
 }

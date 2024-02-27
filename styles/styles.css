@@ -58,7 +58,9 @@ li {
 }
 
 .container {
+  max-width: 1440px;
   padding: 140px 30px;
+  margin: 0 auto;
 }
 
 .header-container {
@@ -93,6 +95,7 @@ li {
   flex-grow: 0.7;
   /* 0.7 задаёт правильный процентный отступ навигации от логотипа внутри родителя */
   align-items: center;
+  white-space: nowrap;
 }
 
 .nav {
@@ -108,7 +111,7 @@ li {
   font-weight: 400;
 }
 
-.nav > .font_blue:hover {
+.nav > li:hover {
   color: rgb(126, 182, 147);
 }
 
@@ -137,6 +140,7 @@ li {
 }
 
 .cart__amount {
+  white-space: nowrap;
   margin-right: 24px;
   font-size: 17px;
 }
@@ -224,7 +228,7 @@ li {
 }
 
 .discount-cards__item > * {
-  max-width: 43%;
+  max-width: 57%;
 }
 
 .discount-cards__item > p {
@@ -233,13 +237,16 @@ li {
   line-height: 52px;
 }
 
+.about-us {
+  background-color: rgb(249, 248, 248);
+}
+
 .about-us .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-color: rgb(249, 248, 248);
 }
 
 .about-us__img {
@@ -575,7 +582,7 @@ li {
   line-height: 58.5px;
   text-transform: capitalize;
   text-align: left;
-  width: 50%;
+  width: 310px;
 }
 
 .food-container {
@@ -651,7 +658,7 @@ li {
   background-image: url("/images/orange.png");
   background-position: center;
   background-size: cover;
-  width: calc(100% - 100px);
+  max-width: 1440px;
   border-radius: 30px;
   display: flex;
   flex-direction: row;

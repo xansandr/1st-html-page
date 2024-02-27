@@ -14,14 +14,76 @@
     width: 2560px;
     max-height: 100%;
   }
-
   .subscribe__header {
     display: inline-block;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
+  .eco-friendly {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 0px;
+    max-height: 704px;
+    max-width: 100%;
+    background: url("/images/bg-field.png") no-repeat;
+    background-size: 720px 704px;
+    background-position: left 0px;
+  }
+  .subscribe__header {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .discount-cards {
+    padding: 0 30px;
+  }
+  .discount-cards .container {
+    flex-direction: column;
+  }
+  .subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    flex-direction: column;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .sub-input-container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .sub-input {
+    min-width: 208px;
+    max-width: 280px;
+  }
+  .subscribe__header > h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .subscribe__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-input-container .button a {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header-container {
+    padding: 20px 0;
+    justify-content: space-around;
+  }
+
   .navigation {
     top: 0;
     right: 0;
@@ -40,12 +102,13 @@
   }
   .burger {
     display: none;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     display: block;
-    position: relative;
     border: none;
+    z-index: 1;
     background: transparent;
     width: 40px;
     height: 26px;
@@ -95,9 +158,6 @@
   .nav__item:hover {
     background: rgba(255, 255, 255, 0.2);
   }
-}
-
-@media screen and (max-width: 1440px) {
   .nav {
     display: flex;
     flex-grow: 1;
@@ -105,83 +165,18 @@
     justify-content: space-between;
     gap: 40px;
   }
-  .eco-friendly {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-right: 0px;
-    max-height: 704px;
-    max-width: 100%;
-    background: url("/images/bg-field.png") no-repeat;
-    background-size: 720px 704px;
-    background-position: left 0px;
-  }
 
-  .discount-cards {
-    padding: 0 30px;
-  }
-  .subscribe__header {
-    text-align: left;
-  }
-}
-
-@media screen and (max-width: 1240px) {
-  .discount-cards .container {
-    flex-direction: column;
-  }
-
-  .subscribe-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 5px;
-    flex-direction: column;
-    padding-bottom: 20px;
-    width: 90%;
-  }
-  .sub-input-container {
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-  }
-  .sub-input {
-    min-width: 208px;
-    max-width: 280px;
-  }
-  .subscribe__header > h2 {
-    font-size: 50px;
-    text-align: center;
-  }
-  .subscribe__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .sub-input-container .button a {
-    gap: 10px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .discount-cards {
-    padding: 0 30px;
-  }
   .about-us .container {
     display: flex;
     flex-direction: column;
   }
-
   .about-us .section-header .font_cursive {
     text-align: center;
     width: 100%;
   }
-
   .about-us .section-header {
     text-align: center;
   }
-
   .footer {
     padding: 0px 20px;
   }
@@ -191,6 +186,12 @@
   }
   .column-middle {
     width: 25%;
+  }
+  .about-us > img {
+    width: 100%;
+  }
+  .about-us-content {
+    width: 100%;
   }
 }
 
@@ -253,14 +254,6 @@
     width: 90%;
     text-align: center;
   }
-  .about-us > img {
-    width: 100%;
-  }
-
-  .about-us-content {
-    width: 100%;
-  }
-
   .about-us-advantage {
     margin-top: 0px;
   }
@@ -324,7 +317,6 @@
     width: 100%;
     text-align: center;
   }
-
   .product__wrap {
     width: 90%;
   }
@@ -361,7 +353,7 @@
   .subscribe-input-container {
     flex-direction: column;
   }
-  .subscribe__header h2{
+  .subscribe__header h2 {
     font-size: 30px;
   }
   .achivements {
@@ -370,30 +362,25 @@
   .container-header {
     text-align: center;
   }
-  
-}
-
-@media screen and (max-width: 640px) {
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 20px;
-  }
-  .burger-transition {
-    display: flex;
-    /* flex-direction: row;
-    align-items: center; */
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {
+  .header-container {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
   .achivement__item {
     height: 170px;
     width: 170px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 
